@@ -1,11 +1,12 @@
-function makeMessage(name, price) {
+function splitMessage(message, delimeter) {
+    let words;
     // Пиши код ниже этой строки
-    const message = `Вы выбрали ${name}, цена за штуку ${price} кредитов`;
-    // Пиши код выше этой строки
-    return message;
-};
+    words = message.split(delimeter);
 
-console.log(makeMessage('Радар', 6150));
-console.log(makeMessage('Сканер', 3500));
-console.log(makeMessage('Реактор', 8000));
-console.log(makeMessage('Двигатель', 4070));
+
+    // Пиши код выше этой строки
+    return words;
+}
+console.log(splitMessage('Манго спешит на поезд', ' '));
+console.log(splitMessage('Манго', ''));
+console.log(splitMessage('лучшее_за_неделю', '_'));

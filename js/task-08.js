@@ -1,9 +1,8 @@
+// Стартовый код
+const fruits = ['яблоко', 'персик', 'груша', 'банан'];
 // Пиши код ниже этой строки
-function add(a, b, c) {
-    console.log(`Результат сложения равен ${a + b + c}`);
-    // Пиши код выше этой строки
-}
+const lastElementIndex = fruits.length - 1;
+const lastElement = fruits[lastElementIndex];
 
-add(15, 27, 10);
-add(10, 20, 30);
-add(5, 10, 15);
+console.log(lastElementIndex);
+console.log(lastElement);

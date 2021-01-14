@@ -1,13 +1,11 @@
-function add(a, b, c) {
-    //  Пиши код ниже этой строки
-    return a + b + c;
+function getExtremeElements(array) {
+    // Пиши код ниже этой строки
+    return [array[0], array[array.length - 1]];
 
-    console.log('Этот лог никогда не выполнится, он стоит после return');
-    //  Пиши код выше этой строки
+
+
+    // Пиши код выше этой строки
 }
-
-add(2, 5, 8); // 15
-
-console.log(add(15, 27, 10));
-console.log(add(10, 20, 30));
-console.log(add(5, 10, 15));
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(['Земля', 'Марс', 'Венера']));
+console.log(getExtremeElements(['яблоко', 'персик', 'груша', 'банан']));

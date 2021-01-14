@@ -1,7 +1,7 @@
-let pricePerDroid = 800;
-let orderedQuantity = 6;
-let deliveryFee = 50;
-let totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
-const message = `Вы заказали дроидов на сумму ${totalPrice} кредитов. Доставка (${deliveryFee} кредитов) включена в сумму заказа.`;
+// Стартовый код
+const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
+// Пиши код ниже этой строки
+fruits[1] = 'персик';
+fruits[3] = 'банан';
 
-console.log(message);
+console.log(fruits);

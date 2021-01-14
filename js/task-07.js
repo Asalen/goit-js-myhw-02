@@ -1,6 +1,6 @@
+// Стартовый код
+const fruits = ['яблоко', 'персик', 'груша', 'банан'];
 // Пиши код ниже этой строки
-function sayHi() {
-    console.log('Привет, это моя первая функция!');
-}
+const fruitsArrayLength = fruits.length;
 
-sayHi();
+console.log(fruitsArrayLength);
