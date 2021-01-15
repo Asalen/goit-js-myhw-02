@@ -1,8 +1,6 @@
 function calculateEngravingPrice(message, pricePerWord) {
     // Пиши код ниже этой строки
-    let words;
-    words = message.split(' ');
-
+    return message = message.split(' ').length * pricePerWord;
     // Пиши код выше этой строки
 }
 
