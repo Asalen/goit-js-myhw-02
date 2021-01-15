@@ -1,17 +1,18 @@
-function checkStorage(available, ordered) {
-    let message;
+function makeArray(firstArray, secondArray, maxLength) {
     // Пиши код ниже этой строки
-    if (available < ordered) {
-        message = 'На складе недостаточно товаров!';
-    } else {
-        message = 'Заказ оформлен, с вами свяжется менеджер';
+    const newArray = firstArray.concat(secondArray);
+    if (newArray.length > maxLength) {
+        return newArray.slice(0, maxLength);
     }
+    return newArray;
+
+
     // Пиши код выше этой строки
-    return message;
 }
 
-console.log(checkStorage(100, 50));
-console.log(checkStorage(100, 130));
-console.log(checkStorage(200, 20));
-console.log(checkStorage(200, 150));
-console.log(checkStorage(150, 180));
+console.log(makeArray(['Манго', 'Поли'], ['Аякс', 'Челси'], 3));
+console.log(makeArray(['Манго', 'Поли', 'Хьюстон'], ['Аякс', 'Челси'], 4));
+console.log(makeArray(['Манго'], ['Аякс', 'Челси', 'Поли', 'Хьюстон'], 3));
+console.log(makeArray(['Земля', 'Юпитер'], ['Нептун', 'Уран'], 2));
+console.log(makeArray(['Земля', 'Юпитер'], ['Нептун', 'Уран'], 4));
+console.log(makeArray(['Земля', 'Юпитер'], ['Нептун', 'Уран', 'Венера'], 0));

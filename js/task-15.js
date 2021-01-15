@@ -1,16 +1,9 @@
-function checkAge(age) {
-    let message;
+const oldClients = ['Манго', 'Аякс', 'Поли', 'Киви'];
+const newClients = ['Персик', 'Хьюстон'];
 
-    if (age >= 18) { // Дополни эту строку
-        message = 'Вы совершеннолетний человек';
-    } else {
-        message = 'Вы не совершеннолетний человек';
-    }
+const allClients = oldClients.concat(newClients); // Дополни эту строку
 
-    return message;
-}
 
-console.log(checkAge(20));
-console.log(checkAge(8));
-console.log(checkAge(14));
-console.log(checkAge(38));
+console.log(oldClients);
+console.log(newClients);
+console.log(allClients);

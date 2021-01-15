@@ -1,12 +1,11 @@
-function isAdult(age) {
+function slugify(title) {
     // Пиши код ниже этой строки
-    const passed = age >= 18;
-
+    let slug;
+    return slug = title.toLowerCase().split(' ').join('-');
     // Пиши код выше этой строки
-    return passed;
 }
 
-console.log(isAdult(20));
-console.log(isAdult(14));
-console.log(isAdult(8));
-console.log(isAdult(37));
+console.log(slugify('Массивы для новичков'));
+console.log(slugify('Английский для разработчика'));
+console.log(slugify('Десять секретов JavaScript'));
+console.log(slugify('Как стать JUNIOR разработчиком за ДВЕ НЕДЕЛИ'));

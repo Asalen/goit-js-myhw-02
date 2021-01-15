@@ -1,19 +1,7 @@
-function checkPassword(password) {
-    const ADMIN_PASSWORD = 'jqueryismyjam';
-    let message;
+const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
 
-    if (password === null) {
-        message = 'Отменено пользователем!';
-    } else if (password === ADMIN_PASSWORD) {
-        message = 'Добро пожаловать!';
-    } else {
-        message = 'Доступ запрещен, неверный пароль!';
-    }
-
-    return message;
+for (let i = 0; i < fruits.length; i += 1) { // Дополни эту строку
+    const fruit = fruits[i];
+    // Дополни эту строку
+    console.log(fruit);
 }
-
-console.log(checkPassword('mangohackzor'));
-console.log(checkPassword(null));
-console.log(checkPassword('polyhax'));
-console.log(checkPassword('jqueryismyjam'));

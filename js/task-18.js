@@ -1,21 +1,15 @@
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-    let message;
+function calculateTotal(number) {
     // Пиши код ниже этой строки
-
-    let totalPrice = pricePerDroid * orderedQuantity;
-
-    if (totalPrice > customerCredits) {
-        message = `Недостаточно средств на счету!`;
-    } else {
-        message = `Вы купили ${orderedQuantity} дроидов, на счету осталось ${customerCredits - pricePerDroid * orderedQuantity} кредитов`;
+    let totalAmount = 0;
+    for (let i = 0; i <= number; i += 1) {
+        totalAmount += i;
     }
-
+    return totalAmount;
     // Пиши код выше этой строки
-    return message;
 }
 
-console.log(makeTransaction(3000, 5, 23000));
-console.log(makeTransaction(1000, 3, 15000));
-console.log(makeTransaction(5000, 10, 8000));
-console.log(makeTransaction(2000, 8, 10000));
-console.log(makeTransaction(500, 10, 5000));
+console.log(calculateTotal(1));
+console.log(calculateTotal(3));
+console.log(calculateTotal(7));
+console.log(calculateTotal(18));
+console.log(calculateTotal(24));

@@ -1,20 +1,13 @@
-function checkStorage(available, ordered) {
-    let message;
+function calculateTotalPrice(order) {
+    let total = 0;
     // Пиши код ниже этой строки
-    if (ordered === 0) {
-        message = 'В заказе еще нет товаров';
-    } else if (ordered > available) {
-        message = 'Слишком большой заказ, на складе недостаточно товаров!';
-    } else {
-        message = 'Заказ оформлен, с вами свяжется менеджер';
-    }
+    for (let i = 0; i < order.length; i += 1)
+        total += order[i];
+
     // Пиши код выше этой строки
-    return message;
+    return total;
 }
 
-console.log(checkStorage(100, 50));
-console.log(checkStorage(100, 130));
-console.log(checkStorage(70, 0));
-console.log(checkStorage(200, 20));
-console.log(checkStorage(200, 250));
-console.log(checkStorage(150, 0));
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotalPrice([164, 48, 291]));
+console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
