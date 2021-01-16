@@ -1,9 +1,25 @@
-function isNumberInRange(start, end, number) {
-    const isInRange = number >= start && number <= end; // дополни эту строку
+function findLongestWord(string) {
+    // Пиши код ниже этой строки
+    const words = string.split(' ');
+    let longWord = words[0];
+    let longWords = [];
+    for (let word of words) {
+        if (longWord.length <= word.length) {
+            longWord = word;
+        }
+    }
+    for (let word of words) {
+        if (longWord.length === word.length) {
+            longWords.push(word);
+        }
+    }
+    return longWords.join(', ');
 
-    return isInRange;
+
+    // Пиши код выше этой строки
 }
-console.log(isNumberInRange(10, 30, 17));
-console.log(isNumberInRange(10, 30, 5));
-console.log(isNumberInRange(20, 50, 24));
-console.log(isNumberInRange(20, 50, 76));
+
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+console.log(findLongestWord('Google do a roll'));
+console.log(findLongestWord('May the force be with you'));
+console.log(findLongestWord());
