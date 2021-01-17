@@ -1,28 +1,12 @@
-function getDiscount(totalSpent) {
-    const BASE_DISCOUNT = 0;
-    const BRONZE_DISCOUNT = 0.02;
-    const SILVER_DISCOUNT = 0.05;
-    const GOLD_DISCOUNT = 0.1;
-    let discount;
-    // Пиши код ниже этой строки
-    if (totalSpent >= 50000) {
-        discount = 0.1;
-    } else if (totalSpent < 50000 && totalSpent >= 20000) {
-        discount = 0.05;
-    } else if (totalSpent < 20000 && totalSpent >= 5000) {
-        discount = 0.02;
-    } else if (totalSpent < 5000) {
-        discount = 0;
-    }
+function checkFruit(fruit) {
+    const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
 
-    // Пиши код выше этой строки
-    return discount;
+    return fruits.includes(fruit); // Дополни эту строку
 }
 
-console.log(getDiscount(137000));
-console.log(getDiscount(46900));
-console.log(getDiscount(8250));
-console.log(getDiscount(1300));
-console.log(getDiscount(5000));
-console.log(getDiscount(20000));
-console.log(getDiscount(50000));
+console.log(checkFruit('слива'));
+console.log(checkFruit('мандарин'));
+console.log(checkFruit('груша'));
+console.log(checkFruit('Груша'));
+console.log(checkFruit('яблоко'));
+console.log(checkFruit());

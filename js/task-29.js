@@ -1,29 +1,20 @@
-function getShippingCost(country) {
-    let message;
+function getEvenNumbers(start, end) {
     // Пиши код ниже этой строки
-    switch (country) {
-        case 'Китай':
-            message = 'Доставка в Китай будет стоить 100 кредитов';
-            break;
-        case 'Чили':
-            message = 'Доставка в Чили будет стоить 250 кредитов';
-            break;
-        case 'Австралия':
-            message = 'Доставка в Австралия будет стоить 170 кредитов';
-            break;
-        case 'Ямайка':
-            message = 'Доставка в Ямайка будет стоить 120 кредитов';
-            break;
-        default:
-            message = 'Извините, в вашу страну доставки нет';
+    const newArray = [];
+
+    for (let i = start; i <= end; i += 1) {
+        if (i % 2 === 0) {
+            newArray.push(i);
+        }
+
     }
+    return newArray;
 
     // Пиши код выше этой строки
-    return message;
 }
 
-console.log(getShippingCost('Австралия'));
-console.log(getShippingCost('Германия'));
-console.log(getShippingCost('Китай'));
-console.log(getShippingCost('Чили'));
-console.log(getShippingCost('Ямайка'));
+console.log(getEvenNumbers(2, 5));
+console.log(getEvenNumbers(3, 11));
+console.log(getEvenNumbers(6, 12));
+console.log(getEvenNumbers(8, 8));
+console.log(getEvenNumbers(7, 7));

@@ -1,12 +1,20 @@
-function checkPassword(password) {
-    const ADMIN_PASSWORD = 'jqueryismyjam';
-    let message;
+function calculateTotalPrice(order) {
+    let total = 0;
     // Пиши код ниже этой строки
-    message = password === ADMIN_PASSWORD ? 'Доступ разрешен' : 'Доступ запрещён, неверный пароль!';
+
+    for (let totalPrice of order) {
+        total += totalPrice;
+    }
+
+    // for (let i = 0; i < order.length; i += 1) {
+    //     total += order[i];
+    // }
 
     // Пиши код выше этой строки
-    return message;
+    return total;
 }
-console.log(checkPassword('jqueryismyjam'));
-console.log(checkPassword('angul4r1sl1f3'));
-console.log(checkPassword('r3actsux'));
+
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotalPrice([164, 48, 291]));
+console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+console.log(calculateTotalPrice([]));

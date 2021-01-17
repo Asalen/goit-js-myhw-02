@@ -1,11 +1,19 @@
-const courseTopic = 'JavaSript для начинающих';
-// Пиши код ниже этой строки
+function findNumber(start, end, divisor) {
+    // Пиши код ниже этой строки
+    let number;
 
-const courseTopicLength = courseTopic.length;
-const firstElement = courseTopic[0];
-const lastElement = courseTopic[courseTopic.length - 1];
+    for (let i = start; i < end; i += 1) {
+        if (i % divisor === 0) {
+            // number = i;
+            return i;
+        }
+    }
 
-// Пиши код выше этой строки
-console.log(courseTopic.length);
-console.log(courseTopic[0]);
-console.log(courseTopic[courseTopic.length - 1]);
+    // return number;
+    // Пиши код выше этой строки
+}
+
+console.log(findNumber(2, 6, 5));
+console.log(findNumber(8, 17, 3));
+console.log(findNumber(6, 9, 4));
+console.log(findNumber(16, 35, 7));
